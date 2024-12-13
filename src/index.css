@@ -1,0 +1,275 @@
+:root {
+    --bg: floralwhite;
+    --radialBlue: #B5FFFC;
+    --radialPink: #FFDEE9;
+    --red: #BB3A47
+}
+
+html, body, header {
+    margin: 0;
+    font-size: 17px;
+    background-color: var(--bg);
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.dongle-light {
+    font-family: "Dongle", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+} 
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 2em;
+    max-width: 1024px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.header_box_logo {
+    color: black;
+    font-size: 2.2em;
+    position: absolute;
+    text-wrap: nowrap;
+    top: 1em;
+    left: 1.3em;
+}
+
+.header_box_logo::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    background-color: black;
+    height: 1px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.magicpattern {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-45 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23FFDEE9%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23B5FFFC%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M731 617.5Q635 735 491 750T175 632.5Q3 500 173 364t353.5-182q183.5-46 242 136T731 617.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M731 617.5Q635 735 491 750T175 632.5Q3 500 173 364t353.5-182q183.5-46 242 136T731 617.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.header_logo_blob {
+    width: 7em;
+    height: 7em;
+}
+
+.header_sidebar {
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.container {
+    margin: 5px;
+}
+
+.about_wrapper {
+    position: relative;
+}
+
+.about {
+    position: relative;
+    padding: 5px;
+    font-size: 1.1em;
+    line-height: 1em;
+}
+
+.about_wrapper::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    background-color: black;
+    height: 1px;
+    border-radius: 3px;
+    width: 40%;
+}
+
+.about_wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: black;
+    height: 1px;
+    border-radius: 3px;
+    width: 40%;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 5px;
+    background-color: black;
+    height: 1px;
+    border-radius: 3px;
+    width: 20%;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    background-color: black;
+    height: 1px;
+    border-radius: 3px;
+    width: 20%;
+}
+
+.navigation_wrapper {
+    margin-top: 50px;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 4em;
+    justify-content: center;
+}
+
+.navigation_li {
+    width: 80%;
+    margin: auto;
+    height: 7em;
+    border-radius: 2.5em 2.5em 5em 5em;
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navigation_li:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 1px;
+    width: 50%;
+}
+
+.navigation_li:before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 1px;
+    width: 70%;
+}
+
+.navigation_wedding {
+    background-image: url("./img/svadba prop.jpg");
+    background-size: 130%;
+    background-position: -60px -0.5px;
+}
+
+.navigation_flowers {
+    background-image: url("./img/kvety prop.jpg");
+    background-size: 130%;
+    background-position: -35px -30px;
+}
+
+.navigation_bouquet {
+    background-image: url("./img/9.jpg");
+    background-size: 130%;
+    background-position: -80px -65px;
+}
+
+.navigation_plates {
+    background-image: url("./img/misy prop.jpg");
+    background-size: 130%;
+    background-position: -60px -0.5px;
+}
+
+.navigation_li_box {
+    font-size: 2em;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation_li_box:before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 1px;
+    width: 50%;
+}
+
+.navigation_li_box:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 1px;
+    width: 35%;
+}
+
+.navigation_wedding_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    background: linear-gradient(45deg, #b5fffc, #ffc1d6)
+}
+
+.navigation_li_box_flag {
+    position: relative; 
+    width: 5em;
+    height: 5em;
+}
+
+
+@media screen and  (min-width: 768px) {
+    
+    html, body, header {
+        font-size: 20px;
+        gap: 4em;
+    }
+
+    .navigation {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
